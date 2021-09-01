@@ -2,9 +2,12 @@ import React from 'react'
 import FormularioCadastro from './components/FormularioCadastro';
 import ListaDeNotas from './components/ListaDeNotas';
 
+import './assets/index.css';
+import './assets/App.css';
+
 function App() {
   return (
-    <section>
+    <section className="conteudo">
       <FormularioCadastro />
       <ListaDeNotas />
     </section>
