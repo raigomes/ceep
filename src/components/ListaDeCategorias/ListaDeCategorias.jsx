@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import CardNota from "../CardNota/CardNota";
 
 import "./estilo.css";
 
 class ListaDeCategorias extends Component {
   _handleEventoInput(e) {
-    if(e.key == "Enter") {
+    if(e.key === "Enter") {
       const novaCategoria = e.target.value
       this.props.adicionarCategoria(novaCategoria)
     }
